@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { getPromises, getConstituenciesByState } from '@/lib/api';
@@ -174,7 +174,6 @@ function PromisesContent() {
   );
 }
 
-import { Suspense } from 'react';
 export default function PromisesPage() {
   return (
     <Suspense fallback={<div className="min-h-screen bg-[#0a0a0a]" />}>
