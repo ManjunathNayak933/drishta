@@ -448,9 +448,16 @@ export async function uploadFile(bucket, path, file) {
 // ============================================================
 
 async function adminPost(action, params) {
+  // Get current session token to verify admin identity server-side
+  const { data: { session } } = await supabase.auth.getSession();
+  const token = session?.access_token ?? '';
+
   const res = await fetch('/api/admin', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      ...(token ? { 'Authorization': `Bearer ${token}` } : {}),
+    },
     body: JSON.stringify({ action, ...params }),
   });
   const data = await res.json();

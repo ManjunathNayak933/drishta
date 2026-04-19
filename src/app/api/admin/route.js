@@ -14,6 +14,23 @@ export async function POST(request) {
     const body = await request.json();
     const { action, ...params } = body;
 
+    // Verify admin token from Authorization header
+    const authHeader = request.headers.get('authorization') ?? '';
+    const token = authHeader.replace('Bearer ', '');
+    if (token) {
+      const verifyClient = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+        { auth: { persistSession: false } }
+      );
+      const { data: { user } } = await verifyClient.auth.getUser(token);
+      const adminEmails = (process.env.ADMIN_EMAILS ?? process.env.NEXT_PUBLIC_ADMIN_EMAILS ?? '')
+        .split(',').map(e => e.trim().toLowerCase());
+      if (!user || !adminEmails.includes(user.email?.toLowerCase() ?? '')) {
+        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+      }
+    }
+
     const supabase = getAdminClient();
 
     switch (action) {
