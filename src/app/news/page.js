@@ -4,6 +4,8 @@ import Navbar from '@/components/layout/Navbar';
 import Link from 'next/link';
 import { format } from 'date-fns';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   title: 'Drishta News — Independent Civic Journalism',
   description: 'Independent journalism covering Indian politics, civic accountability, and democracy. Published by citizen journalists on the Drishta platform.',

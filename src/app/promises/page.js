@@ -17,7 +17,7 @@ const STATES = [
   'Uttarakhand','West Bengal','Delhi','Puducherry',
 ];
 
-export default function PromisesPage() {
+function PromisesContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -171,5 +171,14 @@ export default function PromisesPage() {
         )}
       </div>
     </div>
+  );
+}
+
+import { Suspense } from 'react';
+export default function PromisesPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#0a0a0a]" />}>
+      <PromisesContent />
+    </Suspense>
   );
 }

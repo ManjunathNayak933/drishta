@@ -3,6 +3,8 @@ import Navbar from '@/components/layout/Navbar';
 import IssueCard from '@/components/issues/IssueCard';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   title: 'Issue Board — Civic Problems Across India | Drishta',
   description: 'Browse civic issues reported by citizens across India. Roads, water, electricity, sanitation — documented with evidence and tagged to responsible politicians.',
