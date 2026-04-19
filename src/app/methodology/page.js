@@ -23,7 +23,7 @@ export default function MethodologyPage() {
                 { status: 'Kept', color: '#22c55e', desc: 'The promise was fully delivered. There is verifiable evidence of completion — a project inaugurated, a law passed, a scheme launched as promised.' },
                 { status: 'Partially Kept', color: '#a855f7', desc: 'The promise was partially fulfilled — some elements were delivered but not all, or it was delivered to a narrower scope than promised.' },
                 { status: 'In Progress', color: '#f59e0b', desc: 'There is credible evidence that work towards this promise is actively underway and has not stalled.' },
-                { status: 'Broken', color: '#ef4444', desc: 'The politician's term has ended (or the term context is past) with no delivery. Or the politician explicitly reversed or abandoned the promise.' },
+                { status: 'Broken', color: '#ef4444', desc: "The politician's term has ended (or the term context is past) with no delivery. Or the politician explicitly reversed or abandoned the promise." },
                 { status: 'Expired', color: '#6b7280', desc: 'The deadline or term context for this promise has passed and it was neither kept nor explicitly broken — it simply lapsed.' },
                 { status: 'Unverified', color: '#3b82f6', desc: 'The promise is recorded but our team has not yet been able to verify its current status. This is the default for newly added promises.' },
               ].map(({ status, color, desc }) => (

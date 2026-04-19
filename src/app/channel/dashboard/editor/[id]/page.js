@@ -72,31 +72,38 @@ export default function ArticleEditor() {
   // Load existing article when editing
   useEffect(() => {
     if (isNew || !editor) return;
-    import('@/lib/api').then(({ getArticleById }) =>
-      getArticleById(id)
-    ).then(article => {
-      setForm({
-        title: article.title ?? '',
-        subheadline: article.subheadline ?? '',
-        category: article.category ?? '',
-        author_name: article.author_name ?? '',
-        cover_image_url: article.cover_image_url ?? '',
-      });
-      setStatus(article.status ?? 'draft');
-      if (article.cover_image_url) setCoverPreview(article.cover_image_url);
-      if (article.body_html && editor) {
-        editor.commands.setContent(article.body_html);
+    async function loadArticle() {
+      try {
+        const { getArticleById } = await import('@/lib/api');
+        const article = await getArticleById(id);
+        setForm({
+          title: article.title ?? '',
+          subheadline: article.subheadline ?? '',
+          category: article.category ?? '',
+          author_name: article.author_name ?? '',
+          cover_image_url: article.cover_image_url ?? '',
+        });
+        setStatus(article.status ?? 'draft');
+        if (article.cover_image_url) setCoverPreview(article.cover_image_url);
+        if (article.body_html && editor) {
+          editor.commands.setContent(article.body_html);
+        }
+        // Load tagged politicians
+        if (article.politician_ids?.length > 0) {
+          const { supabase } = await import('@/lib/supabase');
+          const { data: pols } = await supabase
+            .from('politicians')
+            .select('id, name, level, state, party')
+            .in('id', article.politician_ids);
+          if (pols) setTaggedPoliticians(pols);
+        }
+      } catch (e) {
+        console.error(e);
+      } finally {
+        setLoadingArticle(false);
       }
-      // Load tagged politicians
-      if (article.politician_ids?.length > 0) {
-        const { supabase } = await import('@/lib/supabase');
-        const { data: pols } = await supabase
-          .from('politicians')
-          .select('id, name, level, state, party')
-          .in('id', article.politician_ids);
-        if (pols) setTaggedPoliticians(pols);
-      }
-    }).catch(console.error).finally(() => setLoadingArticle(false));
+    }
+    loadArticle();
   }, [isNew, id, editor]);
 
   function set(field) {
