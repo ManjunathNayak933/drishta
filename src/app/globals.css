@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Backgrounds */
+  --bg-base: #0a0a0a;
+  --bg-surface: #0f0f0f;
+  --bg-raised: #141414;
+  --bg-card: #1a1a1a;
+
+  /* Borders */
+  --border: #2a2a2a;
+  --border-subtle: #1f1f1f;
+
+  /* Text */
+  --text-primary: #f5f5f5;
+  --text-secondary: #9a9a9a;
+  --text-muted: #5a5a5a;
+
+  /* Status */
+  --kept: #22c55e;
+  --broken: #ef4444;
+  --progress: #f59e0b;
+  --partial: #a855f7;
+  --expired: #6b7280;
+  --unverified: #3b82f6;
+
+  /* Issue status */
+  --issue-open: #f59e0b;
+  --issue-ack: #3b82f6;
+  --issue-resolved: #22c55e;
+  --issue-disputed: #ef4444;
+
+  /* Category colours */
+  --cat-roads: #f59e0b;
+  --cat-water: #3b82f6;
+  --cat-electricity: #eab308;
+  --cat-sanitation: #92400e;
+  --cat-safety: #ef4444;
+  --cat-healthcare: #22c55e;
+  --cat-education: #a855f7;
+  --cat-other: #6b7280;
+
+  /* News */
+  --gold: #b8860b;
+  --gold-light: #d4a017;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Typography utilities */
+.font-serif { font-family: 'Playfair Display', Georgia, serif; }
+.font-sans  { font-family: 'DM Sans', system-ui, sans-serif; }
+.font-mono  { font-family: 'JetBrains Mono', monospace; }
+
+/* ============================================================
+   EDITORIAL DIVIDER
+   ============================================================ */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  opacity: 0.5;
+}
+
+.divider-bright {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* ============================================================
+   STATUS BADGES — pill shaped, colour-coded
+   ============================================================ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.badge-kept        { background: rgba(34,197,94,0.12);  color: var(--kept); }
+.badge-broken      { background: rgba(239,68,68,0.12);  color: var(--broken); }
+.badge-progress    { background: rgba(245,158,11,0.12); color: var(--progress); }
+.badge-partial     { background: rgba(168,85,247,0.12); color: var(--partial); }
+.badge-expired     { background: rgba(107,114,128,0.12);color: var(--expired); }
+.badge-unverified  { background: rgba(59,130,246,0.12); color: var(--unverified); }
+
+.badge-open        { background: rgba(245,158,11,0.12); color: var(--issue-open); }
+.badge-acknowledged{ background: rgba(59,130,246,0.12); color: var(--issue-ack); }
+.badge-resolved    { background: rgba(34,197,94,0.12);  color: var(--issue-resolved); }
+.badge-disputed    { background: rgba(239,68,68,0.12);  color: var(--issue-disputed); }
+
+/* ============================================================
+   CATEGORY PILLS (Issue Board) — coloured left-border pills
+   ============================================================ */
+.cat-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+}
+
+/* ============================================================
+   DATA TABLES
+   ============================================================ */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.data-table th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 12px 10px 0;
+}
+
+.data-table td {
+  padding: 12px 12px 12px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tr:hover td {
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.02);
+}
+
+/* ============================================================
+   NEWS CATEGORY PILLS (rectangular, gold fill)
+   ============================================================ */
+.news-pill {
+  display: inline-block;
+  background: var(--gold);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 0; /* intentionally no rounding for news */
+}
+
+/* ============================================================
+   PROMISE SCORE ARC — CSS-only thin ring
+   ============================================================ */
+.score-ring {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================================
+   FORM INPUTS
+   ============================================================ */
+.input {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  border-color: rgba(255,255,255,0.25);
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+}
+
+.select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235a5a5a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--text-primary);
+  color: var(--bg-base);
+  border: none;
+  padding: 10px 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  text-decoration: none;
+}
+
+.btn-primary:hover { opacity: 0.9; }
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-decoration: none;
+}
+
+.btn-ghost:hover {
+  border-color: rgba(255,255,255,0.25);
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   MOBILE UTILITIES
+   ============================================================ */
+
+/* Hide scrollbar but keep scrollability (for horizontal nav) */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tap targets: ensure interactive elements are at least 44px tall on mobile */
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-ghost {
+    min-height: 44px;
+  }
+
+  .input,
+  .select {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+    min-height: 44px;
+  }
+}
+
+/* Prevent text size adjustment on orientation change */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #444; }
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.4s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Staggered children */
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 60ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 120ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 180ms; }

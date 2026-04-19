@@ -1,0 +1,1902 @@
+{
+  "constituencies": [
+    {
+      "name": "Andaman & Nicobar Islands",
+      "slug": "andaman-nicobar-islands",
+      "state": "Andaman and Nicobar Islands",
+      "type": "LS"
+    },
+    {
+      "name": "Araria",
+      "slug": "araria",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Arrah",
+      "slug": "arrah",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Aurangabad",
+      "slug": "aurangabad-bihar",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Banka",
+      "slug": "banka",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Begusarai",
+      "slug": "begusarai",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Bhagalpur",
+      "slug": "bhagalpur",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Buxar",
+      "slug": "buxar",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Darbhanga",
+      "slug": "darbhanga",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Gaya",
+      "slug": "gaya",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Gopalganj",
+      "slug": "gopalganj",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Hajipur",
+      "slug": "hajipur",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Jahanabad",
+      "slug": "jahanabad",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Jamui",
+      "slug": "jamui",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Jhanjharpur",
+      "slug": "jhanjharpur",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Karakat",
+      "slug": "karakat",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Katihar",
+      "slug": "katihar",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Khagaria",
+      "slug": "khagaria",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Kishanganj",
+      "slug": "kishanganj",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Madhepura",
+      "slug": "madhepura",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Madhubani",
+      "slug": "madhubani",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Munger",
+      "slug": "munger",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Muzaffarpur",
+      "slug": "muzaffarpur",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Nalanda",
+      "slug": "nalanda",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Nawada",
+      "slug": "nawada",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Paschim Champaran",
+      "slug": "paschim-champaran",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Pataliputra",
+      "slug": "pataliputra",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Patna Sahib",
+      "slug": "patna-sahib",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Purnia",
+      "slug": "purnia",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Purvi Champaran",
+      "slug": "purvi-champaran",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Samastipur",
+      "slug": "samastipur",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Saran",
+      "slug": "saran",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Sitamarhi",
+      "slug": "sitamarhi",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Siwan",
+      "slug": "siwan",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Supaul",
+      "slug": "supaul",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Ujiarpur",
+      "slug": "ujiarpur",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Vaishali",
+      "slug": "vaishali",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Valmiki Nagar",
+      "slug": "valmiki-nagar",
+      "state": "Bihar",
+      "type": "LS"
+    },
+    {
+      "name": "Chandigarh",
+      "slug": "chandigarh-ls",
+      "state": "Chandigarh",
+      "type": "LS"
+    },
+    {
+      "name": "Raipur",
+      "slug": "raipur",
+      "state": "Chhattisgarh",
+      "type": "LS"
+    },
+    {
+      "name": "Bilaspur",
+      "slug": "bilaspur-cg",
+      "state": "Chhattisgarh",
+      "type": "LS"
+    },
+    {
+      "name": "Durg",
+      "slug": "durg",
+      "state": "Chhattisgarh",
+      "type": "LS"
+    },
+    {
+      "name": "Chandni Chowk",
+      "slug": "chandni-chowk",
+      "state": "Delhi",
+      "type": "LS"
+    },
+    {
+      "name": "East Delhi",
+      "slug": "east-delhi",
+      "state": "Delhi",
+      "type": "LS"
+    },
+    {
+      "name": "New Delhi",
+      "slug": "new-delhi-ls",
+      "state": "Delhi",
+      "type": "LS"
+    },
+    {
+      "name": "North East Delhi",
+      "slug": "north-east-delhi",
+      "state": "Delhi",
+      "type": "LS"
+    },
+    {
+      "name": "North West Delhi",
+      "slug": "north-west-delhi",
+      "state": "Delhi",
+      "type": "LS"
+    },
+    {
+      "name": "South Delhi",
+      "slug": "south-delhi",
+      "state": "Delhi",
+      "type": "LS"
+    },
+    {
+      "name": "West Delhi",
+      "slug": "west-delhi",
+      "state": "Delhi",
+      "type": "LS"
+    },
+    {
+      "name": "Gandhinagar",
+      "slug": "gandhinagar",
+      "state": "Gujarat",
+      "type": "LS"
+    },
+    {
+      "name": "Surat",
+      "slug": "surat",
+      "state": "Gujarat",
+      "type": "LS"
+    },
+    {
+      "name": "Rajkot",
+      "slug": "rajkot",
+      "state": "Gujarat",
+      "type": "LS"
+    },
+    {
+      "name": "Ahmedabad East",
+      "slug": "ahmedabad-east",
+      "state": "Gujarat",
+      "type": "LS"
+    },
+    {
+      "name": "Ahmedabad West",
+      "slug": "ahmedabad-west",
+      "state": "Gujarat",
+      "type": "LS"
+    },
+    {
+      "name": "Ambala",
+      "slug": "ambala",
+      "state": "Haryana",
+      "type": "LS"
+    },
+    {
+      "name": "Faridabad",
+      "slug": "faridabad",
+      "state": "Haryana",
+      "type": "LS"
+    },
+    {
+      "name": "Gurgaon",
+      "slug": "gurgaon",
+      "state": "Haryana",
+      "type": "LS"
+    },
+    {
+      "name": "Hisar",
+      "slug": "hisar",
+      "state": "Haryana",
+      "type": "LS"
+    },
+    {
+      "name": "Rohtak",
+      "slug": "rohtak",
+      "state": "Haryana",
+      "type": "LS"
+    },
+    {
+      "name": "Kangra",
+      "slug": "kangra",
+      "state": "Himachal Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Mandi",
+      "slug": "mandi",
+      "state": "Himachal Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Shimla",
+      "slug": "shimla-ls",
+      "state": "Himachal Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Ranchi",
+      "slug": "ranchi",
+      "state": "Jharkhand",
+      "type": "LS"
+    },
+    {
+      "name": "Dhanbad",
+      "slug": "dhanbad",
+      "state": "Jharkhand",
+      "type": "LS"
+    },
+    {
+      "name": "Jamshedpur",
+      "slug": "jamshedpur",
+      "state": "Jharkhand",
+      "type": "LS"
+    },
+    {
+      "name": "Bangalore South",
+      "slug": "bangalore-south",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Bangalore North",
+      "slug": "bangalore-north",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Bangalore Central",
+      "slug": "bangalore-central",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Bangalore Rural",
+      "slug": "bangalore-rural",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Mysore",
+      "slug": "mysore",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Tumkur",
+      "slug": "tumkur",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Shimoga",
+      "slug": "shimoga",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Davangere",
+      "slug": "davangere",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Dharwad",
+      "slug": "dharwad",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Udupi Chikmagalur",
+      "slug": "udupi-chikmagalur",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Uttara Kannada",
+      "slug": "uttara-kannada",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Hassan",
+      "slug": "hassan",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Mandya",
+      "slug": "mandya",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Bellary",
+      "slug": "bellary",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Gulbarga",
+      "slug": "gulbarga",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Raichur",
+      "slug": "raichur",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Bidar",
+      "slug": "bidar",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Kolar",
+      "slug": "kolar",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Chikballapur",
+      "slug": "chikballapur",
+      "state": "Karnataka",
+      "type": "LS"
+    },
+    {
+      "name": "Ernakulam",
+      "slug": "ernakulam",
+      "state": "Kerala",
+      "type": "LS"
+    },
+    {
+      "name": "Thiruvananthapuram",
+      "slug": "thiruvananthapuram",
+      "state": "Kerala",
+      "type": "LS"
+    },
+    {
+      "name": "Kozhikode",
+      "slug": "kozhikode",
+      "state": "Kerala",
+      "type": "LS"
+    },
+    {
+      "name": "Wayanad",
+      "slug": "wayanad",
+      "state": "Kerala",
+      "type": "LS"
+    },
+    {
+      "name": "Malappuram",
+      "slug": "malappuram",
+      "state": "Kerala",
+      "type": "LS"
+    },
+    {
+      "name": "Thrissur",
+      "slug": "thrissur",
+      "state": "Kerala",
+      "type": "LS"
+    },
+    {
+      "name": "Palakkad",
+      "slug": "palakkad",
+      "state": "Kerala",
+      "type": "LS"
+    },
+    {
+      "name": "Kannur",
+      "slug": "kannur",
+      "state": "Kerala",
+      "type": "LS"
+    },
+    {
+      "name": "Alappuzha",
+      "slug": "alappuzha",
+      "state": "Kerala",
+      "type": "LS"
+    },
+    {
+      "name": "Bhopal",
+      "slug": "bhopal",
+      "state": "Madhya Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Indore",
+      "slug": "indore",
+      "state": "Madhya Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Gwalior",
+      "slug": "gwalior",
+      "state": "Madhya Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Jabalpur",
+      "slug": "jabalpur",
+      "state": "Madhya Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Ujjain",
+      "slug": "ujjain",
+      "state": "Madhya Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Rewa",
+      "slug": "rewa",
+      "state": "Madhya Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Chhindwara",
+      "slug": "chhindwara",
+      "state": "Madhya Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Mumbai North",
+      "slug": "mumbai-north",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Mumbai South",
+      "slug": "mumbai-south",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Mumbai North Central",
+      "slug": "mumbai-north-central",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Mumbai South Central",
+      "slug": "mumbai-south-central",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Pune",
+      "slug": "pune",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Nagpur",
+      "slug": "nagpur",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Baramati",
+      "slug": "baramati",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Thane",
+      "slug": "thane",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Nashik",
+      "slug": "nashik",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Aurangabad",
+      "slug": "aurangabad-mh",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Kolhapur",
+      "slug": "kolhapur",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Amravati",
+      "slug": "amravati",
+      "state": "Maharashtra",
+      "type": "LS"
+    },
+    {
+      "name": "Amritsar",
+      "slug": "amritsar",
+      "state": "Punjab",
+      "type": "LS"
+    },
+    {
+      "name": "Ludhiana",
+      "slug": "ludhiana",
+      "state": "Punjab",
+      "type": "LS"
+    },
+    {
+      "name": "Jalandhar",
+      "slug": "jalandhar",
+      "state": "Punjab",
+      "type": "LS"
+    },
+    {
+      "name": "Bathinda",
+      "slug": "bathinda",
+      "state": "Punjab",
+      "type": "LS"
+    },
+    {
+      "name": "Gurdaspur",
+      "slug": "gurdaspur",
+      "state": "Punjab",
+      "type": "LS"
+    },
+    {
+      "name": "Fatehgarh Sahib",
+      "slug": "fatehgarh-sahib",
+      "state": "Punjab",
+      "type": "LS"
+    },
+    {
+      "name": "Sangrur",
+      "slug": "sangrur",
+      "state": "Punjab",
+      "type": "LS"
+    },
+    {
+      "name": "Jaipur",
+      "slug": "jaipur",
+      "state": "Rajasthan",
+      "type": "LS"
+    },
+    {
+      "name": "Jodhpur",
+      "slug": "jodhpur",
+      "state": "Rajasthan",
+      "type": "LS"
+    },
+    {
+      "name": "Ajmer",
+      "slug": "ajmer",
+      "state": "Rajasthan",
+      "type": "LS"
+    },
+    {
+      "name": "Bikaner",
+      "slug": "bikaner",
+      "state": "Rajasthan",
+      "type": "LS"
+    },
+    {
+      "name": "Kota",
+      "slug": "kota",
+      "state": "Rajasthan",
+      "type": "LS"
+    },
+    {
+      "name": "Udaipur",
+      "slug": "udaipur",
+      "state": "Rajasthan",
+      "type": "LS"
+    },
+    {
+      "name": "Alwar",
+      "slug": "alwar",
+      "state": "Rajasthan",
+      "type": "LS"
+    },
+    {
+      "name": "Nagaur",
+      "slug": "nagaur",
+      "state": "Rajasthan",
+      "type": "LS"
+    },
+    {
+      "name": "Chennai Central",
+      "slug": "chennai-central",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Chennai North",
+      "slug": "chennai-north",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Chennai South",
+      "slug": "chennai-south",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Coimbatore",
+      "slug": "coimbatore",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Madurai",
+      "slug": "madurai",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Nilgiris",
+      "slug": "nilgiris",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Salem",
+      "slug": "salem",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Thoothukudi",
+      "slug": "thoothukudi",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Tiruchirapalli",
+      "slug": "tiruchirapalli",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Vellore",
+      "slug": "vellore",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Kanniyakumari",
+      "slug": "kanniyakumari",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Dharmapuri",
+      "slug": "dharmapuri",
+      "state": "Tamil Nadu",
+      "type": "LS"
+    },
+    {
+      "name": "Hyderabad",
+      "slug": "hyderabad",
+      "state": "Telangana",
+      "type": "LS"
+    },
+    {
+      "name": "Secunderabad",
+      "slug": "secunderabad",
+      "state": "Telangana",
+      "type": "LS"
+    },
+    {
+      "name": "Karimnagar",
+      "slug": "karimnagar",
+      "state": "Telangana",
+      "type": "LS"
+    },
+    {
+      "name": "Nalgonda",
+      "slug": "nalgonda",
+      "state": "Telangana",
+      "type": "LS"
+    },
+    {
+      "name": "Warangal",
+      "slug": "warangal",
+      "state": "Telangana",
+      "type": "LS"
+    },
+    {
+      "name": "Khammam",
+      "slug": "khammam",
+      "state": "Telangana",
+      "type": "LS"
+    },
+    {
+      "name": "Malkajgiri",
+      "slug": "malkajgiri",
+      "state": "Telangana",
+      "type": "LS"
+    },
+    {
+      "name": "Nizamabad",
+      "slug": "nizamabad",
+      "state": "Telangana",
+      "type": "LS"
+    },
+    {
+      "name": "Lucknow",
+      "slug": "lucknow",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Varanasi",
+      "slug": "varanasi",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Gorakhpur",
+      "slug": "gorakhpur",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Allahabad",
+      "slug": "allahabad",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Kannauj",
+      "slug": "kannauj",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Rae Bareli",
+      "slug": "rae-bareli",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Amethi",
+      "slug": "amethi",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Mainpuri",
+      "slug": "mainpuri",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Meerut",
+      "slug": "meerut",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Nagina",
+      "slug": "nagina",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Agra",
+      "slug": "agra",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Mathura",
+      "slug": "mathura",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Kanpur",
+      "slug": "kanpur",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Azamgarh",
+      "slug": "azamgarh",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Saharanpur",
+      "slug": "saharanpur",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Faizabad",
+      "slug": "faizabad",
+      "state": "Uttar Pradesh",
+      "type": "LS"
+    },
+    {
+      "name": "Kolkata North",
+      "slug": "kolkata-north",
+      "state": "West Bengal",
+      "type": "LS"
+    },
+    {
+      "name": "Kolkata South",
+      "slug": "kolkata-south",
+      "state": "West Bengal",
+      "type": "LS"
+    },
+    {
+      "name": "Howrah",
+      "slug": "howrah",
+      "state": "West Bengal",
+      "type": "LS"
+    },
+    {
+      "name": "Jadavpur",
+      "slug": "jadavpur",
+      "state": "West Bengal",
+      "type": "LS"
+    },
+    {
+      "name": "Diamond Harbour",
+      "slug": "diamond-harbour",
+      "state": "West Bengal",
+      "type": "LS"
+    },
+    {
+      "name": "Barrackpore",
+      "slug": "barrackpore",
+      "state": "West Bengal",
+      "type": "LS"
+    },
+    {
+      "name": "Hooghly",
+      "slug": "hooghly",
+      "state": "West Bengal",
+      "type": "LS"
+    },
+    {
+      "name": "Dumdum",
+      "slug": "dumdum",
+      "state": "West Bengal",
+      "type": "LS"
+    },
+    {
+      "name": "Murshidabad",
+      "slug": "murshidabad",
+      "state": "West Bengal",
+      "type": "LS"
+    },
+    {
+      "name": "Birbhum",
+      "slug": "birbhum",
+      "state": "West Bengal",
+      "type": "LS"
+    },
+    {
+      "name": "Varuna",
+      "slug": "varuna",
+      "state": "Karnataka",
+      "type": "VS"
+    },
+    {
+      "name": "Chamrajpet",
+      "slug": "chamrajpet",
+      "state": "Karnataka",
+      "type": "VS"
+    },
+    {
+      "name": "Jayanagar",
+      "slug": "jayanagar",
+      "state": "Karnataka",
+      "type": "VS"
+    },
+    {
+      "name": "Mahadevapura",
+      "slug": "mahadevapura",
+      "state": "Karnataka",
+      "type": "VS"
+    },
+    {
+      "name": "Kanakapura",
+      "slug": "kanakapura",
+      "state": "Karnataka",
+      "type": "VS"
+    },
+    {
+      "name": "Kolathur",
+      "slug": "kolathur",
+      "state": "Tamil Nadu",
+      "type": "VS"
+    },
+    {
+      "name": "Worli",
+      "slug": "worli",
+      "state": "Maharashtra",
+      "type": "VS"
+    },
+    {
+      "name": "New Delhi",
+      "slug": "new-delhi-vs",
+      "state": "Delhi",
+      "type": "VS"
+    },
+    {
+      "name": "Patparganj",
+      "slug": "patparganj",
+      "state": "Delhi",
+      "type": "VS"
+    },
+    {
+      "name": "Bhawanipur",
+      "slug": "bhawanipur",
+      "state": "West Bengal",
+      "type": "VS"
+    },
+    {
+      "name": "Jubilee Hills",
+      "slug": "jubilee-hills",
+      "state": "Telangana",
+      "type": "VS"
+    },
+    {
+      "name": "Gorakhpur Urban",
+      "slug": "gorakhpur-urban",
+      "state": "Uttar Pradesh",
+      "type": "VS"
+    },
+    {
+      "name": "Dharmadom",
+      "slug": "dharmadom",
+      "state": "Kerala",
+      "type": "VS"
+    },
+    {
+      "name": "Ghatlodia",
+      "slug": "ghatlodia",
+      "state": "Gujarat",
+      "type": "VS"
+    },
+    {
+      "name": "Jhalrapatan",
+      "slug": "jhalrapatan",
+      "state": "Rajasthan",
+      "type": "VS"
+    },
+    {
+      "name": "Sanganeer",
+      "slug": "sanganeer",
+      "state": "Rajasthan",
+      "type": "VS"
+    },
+    {
+      "name": "Ujjain South",
+      "slug": "ujjain-south",
+      "state": "Madhya Pradesh",
+      "type": "VS"
+    },
+    {
+      "name": "Nadaun",
+      "slug": "nadaun",
+      "state": "Himachal Pradesh",
+      "type": "VS"
+    },
+    {
+      "name": "Ladwa",
+      "slug": "ladwa",
+      "state": "Haryana",
+      "type": "VS"
+    },
+    {
+      "name": "Barhait",
+      "slug": "barhait",
+      "state": "Jharkhand",
+      "type": "VS"
+    },
+    {
+      "name": "Hinjili",
+      "slug": "hinjili",
+      "state": "Odisha",
+      "type": "VS"
+    },
+    {
+      "name": "Patan",
+      "slug": "patan",
+      "state": "Chhattisgarh",
+      "type": "VS"
+    },
+    {
+      "name": "Kuppam",
+      "slug": "kuppam",
+      "state": "Andhra Pradesh",
+      "type": "VS"
+    },
+    {
+      "name": "Nagpur South West",
+      "slug": "nagpur-south-west",
+      "state": "Maharashtra",
+      "type": "VS"
+    }
+  ],
+  "politicians": [
+    {
+      "name": "Narendra Modi",
+      "slug": "narendra-modi",
+      "state": "Uttar Pradesh",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Varanasi",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Rajnath Singh",
+      "slug": "rajnath-singh",
+      "state": "Uttar Pradesh",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Lucknow",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Amit Shah",
+      "slug": "amit-shah",
+      "state": "Gujarat",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Gandhinagar",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Akhilesh Yadav",
+      "slug": "akhilesh-yadav",
+      "state": "Uttar Pradesh",
+      "level": "MP",
+      "party": "Samajwadi Party",
+      "party_short": "SP",
+      "constituency_name": "Kannauj",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Rahul Gandhi",
+      "slug": "rahul-gandhi",
+      "state": "Uttar Pradesh",
+      "level": "MP",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Rae Bareli",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Smriti Irani",
+      "slug": "smriti-irani",
+      "state": "Uttar Pradesh",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Amethi",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Dimple Yadav",
+      "slug": "dimple-yadav",
+      "state": "Uttar Pradesh",
+      "level": "MP",
+      "party": "Samajwadi Party",
+      "party_short": "SP",
+      "constituency_name": "Mainpuri",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Yogi Adityanath",
+      "slug": "yogi-adityanath",
+      "state": "Uttar Pradesh",
+      "level": "MLA",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Gorakhpur Urban",
+      "election_year": 2022,
+      "photo_url": null,
+      "criminal_cases": 6,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Chandrashekhar Azad",
+      "slug": "chandrashekhar-azad",
+      "state": "Uttar Pradesh",
+      "level": "MP",
+      "party": "Azad Samaj Party",
+      "party_short": "ASP",
+      "constituency_name": "Nagina",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 4,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Tejasvi Surya",
+      "slug": "tejasvi-surya",
+      "state": "Karnataka",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Bangalore South",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "P C Mohan",
+      "slug": "p-c-mohan",
+      "state": "Karnataka",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Bangalore Central",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "D K Suresh",
+      "slug": "d-k-suresh",
+      "state": "Karnataka",
+      "level": "MP",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Bangalore Rural",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Shobha Karandlaje",
+      "slug": "shobha-karandlaje",
+      "state": "Karnataka",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Udupi Chikmagalur",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Siddaramaiah",
+      "slug": "siddaramaiah",
+      "state": "Karnataka",
+      "level": "MLA",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Varuna",
+      "election_year": 2023,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "D K Shivakumar",
+      "slug": "d-k-shivakumar",
+      "state": "Karnataka",
+      "level": "MLA",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Kanakapura",
+      "election_year": 2023,
+      "photo_url": null,
+      "criminal_cases": 2,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Zameer Ahmed Khan",
+      "slug": "zameer-ahmed-khan",
+      "state": "Karnataka",
+      "level": "MLA",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Chamrajpet",
+      "election_year": 2023,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Sowmya Reddy",
+      "slug": "sowmya-reddy",
+      "state": "Karnataka",
+      "level": "MLA",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Jayanagar",
+      "election_year": 2023,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Nirmala Sitharaman",
+      "slug": "nirmala-sitharaman",
+      "state": "Karnataka",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Rajya Sabha",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Mallikarjun Kharge",
+      "slug": "mallikarjun-kharge",
+      "state": "Karnataka",
+      "level": "MP",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Rajya Sabha",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Manoj Tiwari",
+      "slug": "manoj-tiwari",
+      "state": "Delhi",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "North East Delhi",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Ramvir Singh Bidhuri",
+      "slug": "ramvir-singh-bidhuri",
+      "state": "Delhi",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "South Delhi",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Parvesh Verma",
+      "slug": "parvesh-verma",
+      "state": "Delhi",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "New Delhi",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Arvind Kejriwal",
+      "slug": "arvind-kejriwal",
+      "state": "Delhi",
+      "level": "MLA",
+      "party": "Aam Aadmi Party",
+      "party_short": "AAP",
+      "constituency_name": "New Delhi",
+      "election_year": 2025,
+      "photo_url": null,
+      "criminal_cases": 1,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Atishi",
+      "slug": "atishi",
+      "state": "Delhi",
+      "level": "MLA",
+      "party": "Aam Aadmi Party",
+      "party_short": "AAP",
+      "constituency_name": "Patparganj",
+      "election_year": 2025,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Mamata Banerjee",
+      "slug": "mamata-banerjee",
+      "state": "West Bengal",
+      "level": "MLA",
+      "party": "All India Trinamool Congress",
+      "party_short": "TMC",
+      "constituency_name": "Bhawanipur",
+      "election_year": 2021,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Abhishek Banerjee",
+      "slug": "abhishek-banerjee",
+      "state": "West Bengal",
+      "level": "MP",
+      "party": "All India Trinamool Congress",
+      "party_short": "TMC",
+      "constituency_name": "Diamond Harbour",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 2,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Sudip Bandyopadhyay",
+      "slug": "sudip-bandyopadhyay",
+      "state": "West Bengal",
+      "level": "MP",
+      "party": "All India Trinamool Congress",
+      "party_short": "TMC",
+      "constituency_name": "Kolkata North",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 1,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Mala Roy",
+      "slug": "mala-roy",
+      "state": "West Bengal",
+      "level": "MP",
+      "party": "All India Trinamool Congress",
+      "party_short": "TMC",
+      "constituency_name": "Kolkata South",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Aaditya Thackeray",
+      "slug": "aaditya-thackeray",
+      "state": "Maharashtra",
+      "level": "MLA",
+      "party": "Shiv Sena (UBT)",
+      "party_short": "SS-UBT",
+      "constituency_name": "Worli",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Nitin Gadkari",
+      "slug": "nitin-gadkari",
+      "state": "Maharashtra",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Nagpur",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Supriya Sule",
+      "slug": "supriya-sule",
+      "state": "Maharashtra",
+      "level": "MP",
+      "party": "Nationalist Congress Party (SP)",
+      "party_short": "NCP-SP",
+      "constituency_name": "Baramati",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Devendra Fadnavis",
+      "slug": "devendra-fadnavis",
+      "state": "Maharashtra",
+      "level": "MLA",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Nagpur South West",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "MK Stalin",
+      "slug": "mk-stalin",
+      "state": "Tamil Nadu",
+      "level": "MLA",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_short": "DMK",
+      "constituency_name": "Kolathur",
+      "election_year": 2021,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Kanimozhi",
+      "slug": "kanimozhi",
+      "state": "Tamil Nadu",
+      "level": "MP",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_short": "DMK",
+      "constituency_name": "Thoothukudi",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "A Raja",
+      "slug": "a-raja",
+      "state": "Tamil Nadu",
+      "level": "MP",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_short": "DMK",
+      "constituency_name": "Nilgiris",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 3,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Asaduddin Owaisi",
+      "slug": "asaduddin-owaisi",
+      "state": "Telangana",
+      "level": "MP",
+      "party": "All India Majlis-e-Ittehadul Muslimeen",
+      "party_short": "AIMIM",
+      "constituency_name": "Hyderabad",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Revanth Reddy",
+      "slug": "revanth-reddy",
+      "state": "Telangana",
+      "level": "MLA",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Jubilee Hills",
+      "election_year": 2023,
+      "photo_url": null,
+      "criminal_cases": 3,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Gajendra Singh Shekhawat",
+      "slug": "gajendra-singh-shekhawat",
+      "state": "Rajasthan",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Jodhpur",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Vasundhara Raje",
+      "slug": "vasundhara-raje",
+      "state": "Rajasthan",
+      "level": "MLA",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Jhalrapatan",
+      "election_year": 2023,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Bhajan Lal Sharma",
+      "slug": "bhajan-lal-sharma",
+      "state": "Rajasthan",
+      "level": "MLA",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Sanganeer",
+      "election_year": 2023,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Shashi Tharoor",
+      "slug": "shashi-tharoor",
+      "state": "Kerala",
+      "level": "MP",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Thiruvananthapuram",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 1,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Pinarayi Vijayan",
+      "slug": "pinarayi-vijayan",
+      "state": "Kerala",
+      "level": "MLA",
+      "party": "Communist Party of India (Marxist)",
+      "party_short": "CPI-M",
+      "constituency_name": "Dharmadom",
+      "election_year": 2021,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Bhupendra Patel",
+      "slug": "bhupendra-patel",
+      "state": "Gujarat",
+      "level": "MLA",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Ghatlodia",
+      "election_year": 2022,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "S Jaishankar",
+      "slug": "s-jaishankar",
+      "state": "Gujarat",
+      "level": "MP",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Rajya Sabha",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Mohan Yadav",
+      "slug": "mohan-yadav",
+      "state": "Madhya Pradesh",
+      "level": "MLA",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Ujjain South",
+      "election_year": 2023,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Hemant Soren",
+      "slug": "hemant-soren",
+      "state": "Jharkhand",
+      "level": "MLA",
+      "party": "Jharkhand Mukti Morcha",
+      "party_short": "JMM",
+      "constituency_name": "Barhait",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Bhupesh Baghel",
+      "slug": "bhupesh-baghel",
+      "state": "Chhattisgarh",
+      "level": "MLA",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Patan",
+      "election_year": 2023,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Nara Chandrababu Naidu",
+      "slug": "nara-chandrababu-naidu",
+      "state": "Andhra Pradesh",
+      "level": "MLA",
+      "party": "Telugu Desam Party",
+      "party_short": "TDP",
+      "constituency_name": "Kuppam",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Sukhvinder Singh Sukhu",
+      "slug": "sukhvinder-singh-sukhu",
+      "state": "Himachal Pradesh",
+      "level": "MLA",
+      "party": "Indian National Congress",
+      "party_short": "INC",
+      "constituency_name": "Nadaun",
+      "election_year": 2022,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Nayab Singh Saini",
+      "slug": "nayab-singh-saini",
+      "state": "Haryana",
+      "level": "MLA",
+      "party": "Bharatiya Janata Party",
+      "party_short": "BJP",
+      "constituency_name": "Ladwa",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    },
+    {
+      "name": "Naveen Patnaik",
+      "slug": "naveen-patnaik",
+      "state": "Odisha",
+      "level": "MLA",
+      "party": "Biju Janata Dal",
+      "party_short": "BJD",
+      "constituency_name": "Hinjili",
+      "election_year": 2024,
+      "photo_url": null,
+      "criminal_cases": 0,
+      "promise_score": 0,
+      "promise_count": 0
+    }
+  ]
+}
