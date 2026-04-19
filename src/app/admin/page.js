@@ -1,6 +1,11 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+export const runtime = 'edge';
+
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { supabase } from '@/lib/supabase';
 import {
   adminGetStats, adminGetPendingPromises, adminApprovePromise,
   adminRejectPromise, adminGetReports, adminRestoreContent, adminDeleteContent,
@@ -8,6 +13,8 @@ import {
   adminUpdatePromiseStatus, adminGetDataReports, getAllLSConstituencies,
 } from '@/lib/api';
 import { format } from 'date-fns';
+
+const ADMIN_EMAILS = (process.env.NEXT_PUBLIC_ADMIN_EMAILS ?? '').split(',').map(e => e.trim().toLowerCase()).filter(Boolean);
 
 const STATUSES = ['Kept','In Progress','Partially Kept','Broken','Expired','Unverified'];
 
@@ -74,6 +81,9 @@ const TABS = ['Dashboard', 'Pending Promises', 'Reports', 'Channel Applications'
 const TAB_SHORT = ['Stats', 'Promises', 'Reports', 'Channels', 'Data'];
 
 export default function AdminPage() {
+  const router = useRouter();
+  const [authChecked, setAuthChecked] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [tab, setTab] = useState('Dashboard');
   const [stats, setStats] = useState(null);
   const [pending, setPending] = useState([]);
@@ -85,7 +95,20 @@ export default function AdminPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => { loadData(); }, [tab]);
+  // Auth check — must be admin email
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      const email = session?.user?.email?.toLowerCase() ?? '';
+      if (!session || !ADMIN_EMAILS.includes(email)) {
+        router.replace('/auth/login');
+        return;
+      }
+      setIsAdmin(true);
+      setAuthChecked(true);
+    });
+  }, []);
+
+  useEffect(() => { if (isAdmin) loadData(); }, [tab, isAdmin]);
 
   async function loadData() {
     setLoading(true);
@@ -158,6 +181,14 @@ export default function AdminPage() {
 
   const pendingApps   = channelApps.filter(a => a.status === 'pending');
   const reviewedApps  = channelApps.filter(a => a.status !== 'pending');
+
+  if (!authChecked) return (
+    <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
+      <p className="text-[#3a3a3a] text-sm">Checking access…</p>
+    </div>
+  );
+
+  if (!isAdmin) return null;
 
   return (
     <div className="min-h-screen bg-[#0a0a0a]">
@@ -235,6 +266,10 @@ export default function AdminPage() {
                     <a href="/admin/upload-performance"
                       className="text-[12px] text-[#a855f7] border border-[#a855f7]/20 hover:border-[#a855f7]/50 px-3 py-1.5 rounded transition-colors flex items-center gap-1.5">
                       📊 Add Performance
+                    </a>
+                    <a href="/admin/revenue"
+                      className="text-[12px] text-[#f97316] border border-[#f97316]/20 hover:border-[#f97316]/50 px-3 py-1.5 rounded transition-colors flex items-center gap-1.5">
+                      💵 Revenue Sharing
                     </a>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
