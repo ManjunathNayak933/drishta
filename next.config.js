@@ -21,6 +21,7 @@ const nextConfig = {
       },
     ],
     formats: ['image/avif', 'image/webp'],
+    unoptimized: true, // Required for Cloudflare Pages
   },
   // Rewrites for clean URLs
   async rewrites() {

@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { createClient } from '@supabase/supabase-js';
 import { NextResponse } from 'next/server';
 
@@ -399,6 +400,113 @@ export async function POST(request) {
         return NextResponse.json({ ok: true });
       }
 
+      case 'createRevenueMonth': {
+        const { month, total_adsense, creator_share } = params;
+        const adsense = parseFloat(total_adsense);
+        const share = parseFloat(creator_share ?? 40);
+        const creatorPool = +(adsense * share / 100).toFixed(2);
+
+        // Create the month record
+        const { data: monthRow, error: mErr } = await supabase
+          .from('revenue_months')
+          .upsert({ month: month + '-01', total_adsense: adsense, creator_share: share }, { onConflict: 'month' })
+          .select().single();
+        if (mErr) return NextResponse.json({ error: mErr.message }, { status: 500 });
+
+        // Get all views for this month grouped by channel
+        const startDate = month + '-01';
+        const endDate = new Date(new Date(startDate).setMonth(new Date(startDate).getMonth() + 1))
+          .toISOString().split('T')[0];
+
+        const { data: viewData } = await supabase
+          .from('article_views')
+          .select('channel_id, view_count')
+          .gte('viewed_at', startDate)
+          .lt('viewed_at', endDate);
+
+        // Aggregate by channel
+        const channelViews = {};
+        for (const v of viewData ?? []) {
+          channelViews[v.channel_id] = (channelViews[v.channel_id] ?? 0) + (v.view_count ?? 1);
+        }
+        const totalViews = Object.values(channelViews).reduce((s, v) => s + v, 0);
+
+        if (totalViews === 0) {
+          return NextResponse.json({ month: monthRow, message: 'No views found for this month' });
+        }
+
+        // Get channel details
+        const channelIds = Object.keys(channelViews);
+        const { data: channels } = await supabase
+          .from('channels')
+          .select('id, name, slug, is_gst_registered, gstin, pan')
+          .in('id', channelIds);
+
+        const { data: apps } = await supabase
+          .from('channel_applications')
+          .select('channel_id:channels(id), applicant_email')
+          .in('channel_id', channelIds);
+
+        const emailMap = {};
+        for (const a of apps ?? []) {
+          if (a.channel_id?.id) emailMap[a.channel_id.id] = a.applicant_email;
+        }
+
+        // Calculate payouts per channel
+        const payoutRecords = channelIds.map(channelId => {
+          const ch = channels?.find(c => c.id === channelId);
+          const views = channelViews[channelId];
+          const viewSharePct = totalViews > 0 ? +(views / totalViews * 100).toFixed(4) : 0;
+          const grossAmount = +(creatorPool * viewSharePct / 100).toFixed(2);
+          const isGst = ch?.is_gst_registered ?? false;
+          const tdsAmount = +(grossAmount * 0.10).toFixed(2);
+          const gstAmount = isGst ? +(grossAmount * 0.18).toFixed(2) : 0;
+          const netPayable = +(grossAmount + gstAmount - tdsAmount).toFixed(2);
+
+          return {
+            month_id: monthRow.id,
+            channel_id: channelId,
+            channel_name: ch?.name ?? 'Unknown',
+            owner_email: emailMap[channelId] ?? null,
+            total_views: views,
+            view_share_pct: viewSharePct,
+            gross_amount: grossAmount,
+            gst_amount: gstAmount,
+            tds_amount: tdsAmount,
+            net_payable: netPayable,
+            is_gst_registered: isGst,
+            gstin: ch?.gstin ?? null,
+            pan: ch?.pan ?? null,
+          };
+        });
+
+        // Delete old payouts for this month and insert new
+        await supabase.from('channel_payouts').delete().eq('month_id', monthRow.id);
+        const { error: pErr } = await supabase.from('channel_payouts').insert(payoutRecords);
+        if (pErr) return NextResponse.json({ error: pErr.message }, { status: 500 });
+
+        return NextResponse.json({ ok: true, month: monthRow });
+      }
+
+      case 'getMonthPayouts': {
+        const { data } = await supabase
+          .from('channel_payouts')
+          .select('*')
+          .eq('month_id', params.monthId ?? searchParams.get('monthId'))
+          .order('total_views', { ascending: false });
+        return NextResponse.json({ payouts: data ?? [] });
+      }
+
+      case 'markPayoutPaid': {
+        const { payoutId, utr } = params;
+        await supabase.from('channel_payouts').update({
+          payment_status: 'paid',
+          paid_at: new Date().toISOString(),
+          utr_number: utr,
+        }).eq('id', payoutId);
+        return NextResponse.json({ ok: true });
+      }
+
       case 'holdChannel': {
         const { channelId } = params;
         const { error } = await supabase.from('channels')
@@ -628,6 +736,14 @@ export async function POST(request) {
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
   const action = searchParams.get('action');
+
+  if (action === 'getRevenueMonths') {
+    const { data } = await supabase
+      .from('revenue_months')
+      .select('*')
+      .order('month', { ascending: false });
+    return NextResponse.json({ months: data ?? [] });
+  }
 
   if (action === 'getDisputeReports') {
     const { data, error } = await supabase
