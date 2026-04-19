@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -33,14 +35,26 @@ export default function ChannelDashboard() {
     return () => subscription.unsubscribe();
   }, []);
 
+  const [earnings, setEarnings] = useState([]);
+
   async function loadChannel(email) {
     setLoading(true);
     try {
       const ch = await getChannelByOwnerEmail(email);
       if (ch) {
         setChannel(ch);
-        const arts = await getArticlesByChannel(ch.id);
+        const [arts, payouts] = await Promise.all([
+          getArticlesByChannel(ch.id),
+          supabase
+            .from('channel_payouts')
+            .select('*, revenue_months(month, total_adsense, status)')
+            .eq('channel_id', ch.id)
+            .order('created_at', { ascending: false })
+            .limit(12)
+            .then(r => r.data ?? []),
+        ]);
         setArticles(arts);
+        setEarnings(payouts);
       }
     } catch (e) { console.error(e); }
     finally { setLoading(false); setAuthChecked(true); }
@@ -113,7 +127,7 @@ export default function ChannelDashboard() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
           {[
             { label: 'Total Articles', value: articles.length, color: '#f5f5f5' },
             { label: 'Published', value: published, color: '#22c55e' },
@@ -124,6 +138,49 @@ export default function ChannelDashboard() {
               <p className="font-mono text-3xl font-bold" style={{ color }}>{value}</p>
             </div>
           ))}
+        </div>
+
+        {/* Earnings */}
+        <div className="bg-[#0f0f0f] border border-[#1a1a1a] rounded-lg p-4 mb-8">
+          <p className="text-[10px] uppercase tracking-wider text-[#4a4a4a] mb-3">Earnings</p>
+          {earnings.length === 0 ? (
+            <p className="text-[12px] text-[#3a3a3a]">
+              No payouts yet. You receive 40% of AdSense revenue proportional to your views. Payouts are processed monthly.
+            </p>
+          ) : (
+            <div className="space-y-2">
+              {earnings.map(e => {
+                const month = e.revenue_months;
+                return (
+                  <div key={e.id} className="flex items-center justify-between py-2 border-b border-[#141414] last:border-0">
+                    <div>
+                      <p className="text-[12px] text-[#9a9a9a]">
+                        {month?.month ? new Date(month.month).toLocaleDateString('en-IN', { month: 'long', year: 'numeric' }) : '—'}
+                      </p>
+                      <p className="text-[10px] text-[#4a4a4a] mt-0.5">
+                        {e.total_views?.toLocaleString('en-IN')} views · {e.view_share_pct?.toFixed(2)}% share
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-[13px] font-mono font-bold text-[#22c55e]">₹{e.net_payable?.toFixed(2)}</p>
+                      <p className="text-[10px] text-[#4a4a4a]">after TDS{e.is_gst_registered ? ' + GST' : ''}</p>
+                      <span className={`text-[9px] px-1.5 py-0.5 rounded mt-0.5 inline-block ${
+                        e.payment_status === 'paid'
+                          ? 'bg-[#22c55e]/20 text-[#22c55e]'
+                          : 'bg-[#f59e0b]/20 text-[#f59e0b]'
+                      }`}>{e.payment_status === 'paid' ? `Paid${e.utr_number ? ' · UTR: ' + e.utr_number : ''}` : 'Pending'}</span>
+                    </div>
+                  </div>
+                );
+              })}
+              <div className="pt-2 flex justify-between text-[11px]">
+                <span className="text-[#4a4a4a]">Total earned (all time)</span>
+                <span className="font-mono text-white">
+                  ₹{earnings.reduce((s, e) => s + (e.net_payable ?? 0), 0).toFixed(2)}
+                </span>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Articles */}
