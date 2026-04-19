@@ -1,5 +1,7 @@
 'use client';
 
+export const runtime = 'edge';
+
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { getStates, getConstituenciesByState, getPoliticiansByConstituency, getConstituencyById, getConstituencyWithHistory, getMlaHistory, getParliamentPerformance } from '@/lib/api';
@@ -405,7 +407,8 @@ export default function HomePage() {
               {[
                 { label: 'View Promises', href: `/promises?state=${encodeURIComponent(result.constituency?.state ?? '')}`, icon: '📋' },
                 { label: 'View History', href: `/constituency/${result.constituency?.id}/history`, icon: '🏛️' },
-                { label: 'View Issues', href: `/issues/${encodeURIComponent(result.constituency?.state ?? '')}/${result.constituency?.slug}`, icon: '🔍' },                { label: 'Post a Promise', href: '/submit/promise', icon: '✍️' },
+                { label: 'View Issues', href: `/issues/${encodeURIComponent(result.constituency?.state ?? '')}/${result.constituency?.slug}`, icon: '🔍' },
+                { label: 'Post a Promise', href: '/submit/promise', icon: '✍️' },
               ].map(({ label, href, icon }) => (
                 <Link key={label} href={href}
                   className="flex flex-col items-center gap-1.5 py-4 px-2 bg-[#111] border border-[#2a2a2a] rounded-lg text-center hover:bg-[#161616] hover:border-[#3a3a3a] transition-colors text-[#9a9a9a] hover:text-white text-xs font-medium">

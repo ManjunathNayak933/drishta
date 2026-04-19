@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getArticleBySlug, getArticles } from '@/lib/api';
@@ -34,6 +35,15 @@ export default async function ArticlePage({ params }) {
     article = await getArticleBySlug(slug);
   } catch {
     notFound();
+  }
+
+  // Track view (fire and forget — don't await)
+  if (article?.id && article?.channel_id) {
+    fetch('/api/track-view', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ article_id: article.id, channel_id: article.channel_id }),
+    }).catch(() => {});
   }
 
   // More from channel

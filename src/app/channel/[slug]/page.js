@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { notFound } from 'next/navigation';
 import { getChannelBySlug, getArticles } from '@/lib/api';
 import { ArticleCard } from '@/components/news/ArticleCard';

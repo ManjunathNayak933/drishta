@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { getIssues, getTopConstituenciesByIssues } from '@/lib/api';
 import Navbar from '@/components/layout/Navbar';
 import IssueCard from '@/components/issues/IssueCard';

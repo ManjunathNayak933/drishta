@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { getArticles } from '@/lib/api';
 import { NewsMasthead, ArticleCard, SidebarStory } from '@/components/news/ArticleCard';
 import Navbar from '@/components/layout/Navbar';

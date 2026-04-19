@@ -1,5 +1,7 @@
 'use client';
 
+export const runtime = 'edge';
+
 import { useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import PromiseScore from '@/components/promises/PromiseScore';
